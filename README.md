@@ -7,7 +7,7 @@
 ---
 
 ## 1. Infrastructure Overview
-- **Orchestrator**: AWS EKS (Kubernetes 1.29)
+- **Orchestrator**: AWS EKS (Kubernetes 1.34)
 - **Nodes**: 2 Worker Nodes (t3.medium) in Private Subnets.
 - **Networking**: VPC with Public/Private Subnets + NAT Gateway.
 - **Security**: IAM Roles for Service Accounts (IRSA) used for EBS CSI Driver.
