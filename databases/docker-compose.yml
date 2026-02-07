@@ -1,0 +1,34 @@
+version: '3'
+services:
+  mysql:
+    image: mysql:8.0
+    command: --default-authentication-plugin=mysql_native_password
+    environment:
+      MYSQL_ROOT_PASSWORD: alnafirootpassword
+    ports:
+      - "3306:3306"
+    restart: always
+
+  mongodb:
+    image: mongo:4.4
+    environment:
+      MONGO_INITDB_ROOT_USERNAME: root
+      MONGO_INITDB_ROOT_PASSWORD: alnafirootpassword
+    ports:
+      - "27017:27017"
+    restart: always
+
+  redis:
+    image: redis:6.2
+    ports:
+      - "6379:6379"
+    restart: always
+
+  elasticsearch:
+    image: docker.elastic.co/elasticsearch/elasticsearch:7.10.1
+    environment:
+      - discovery.type=single-node
+      - xpack.security.enabled=false
+    ports:
+      - "9200:9200"
+    restart: always
