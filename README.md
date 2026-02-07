@@ -1,6 +1,6 @@
 # OpenEdX on EKS - Technical Assessment Report
 
-**Candidate Name**: Abdullah
+**Candidate Name**: Abdullah bin Amin
 **Date**: 2026-02-07
 **Cluster**: alnafi-eks-cluster (US-East-1)
 
